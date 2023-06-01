@@ -6,8 +6,8 @@ module.exports = (env, argv) => {
     mode: mode,
     entry: './Sortable/index.js',
     output: {
-      path: path.resolve(__dirname, 'dist'),
-      filename: 'Sortable.js',
+      path: path.resolve(__dirname, 'build'),
+      filename: 'index.js',
     },
     module: {
       rules: [
@@ -21,12 +21,12 @@ module.exports = (env, argv) => {
       ],
     },
     devServer: {
-      static: path.resolve(__dirname, 'dist'),
+      static: path.resolve(__dirname, 'build'),
       port: 3000,
     },
     resolve:{
       alias:{
-        'foornes-react-sortable-hoc': path.resolve(__dirname, 'Sortable/Sortable.js')
+        'foornes-react-sortable-hoc': path.resolve(__dirname, 'build')
       }
     }
   }
