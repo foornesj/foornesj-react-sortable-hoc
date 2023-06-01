@@ -24,6 +24,11 @@ module.exports = (env, argv) => {
       static: path.resolve(__dirname, 'dist'),
       port: 3000,
     },
+    resolve:{
+      alias:{
+        'foornes-react-sortable-hoc': path.resolve(__dirname, 'Sortable/index')
+      }
+    }
   }
 
   if (mode === 'development') {
