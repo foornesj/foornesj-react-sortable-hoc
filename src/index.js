@@ -1,6 +1,6 @@
 import React, { Component, forwardRef } from 'react';
 import { createRoot } from 'react-dom/client';
-import { sortableContainer, sortableElement } from '../Sortable/index';
+import { SortableContainer, SortableElement } from '../Sortable/index';
 import { arrayMoveImmutable as arrayMove } from 'array-move';
 
 const SortableItem = sortableElement(forwardRef(({ value }, ref) => {

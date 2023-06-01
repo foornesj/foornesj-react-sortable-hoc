@@ -4,10 +4,10 @@ module.exports = (env, argv) => {
   const mode = argv.mode || 'production';
   const config = {
     mode: mode,
-    entry: './src/index.js',
+    entry: './Sortable/index.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'bundle.js',
+      filename: 'Sortable.js',
     },
     module: {
       rules: [
@@ -26,7 +26,7 @@ module.exports = (env, argv) => {
     },
     resolve:{
       alias:{
-        'foornes-react-sortable-hoc': path.resolve(__dirname, 'Sortable/index')
+        'foornes-react-sortable-hoc': path.resolve(__dirname, 'Sortable/Sortable.js')
       }
     }
   }
