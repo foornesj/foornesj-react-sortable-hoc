@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { createRoot } from 'react-dom/client';
-import invariant from 'invariant';
 
 import Manager from '../Manager';
 import {isSortableHandle} from '../SortableHandle';

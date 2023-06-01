@@ -1,6 +1,5 @@
 
 import PropTypes from 'prop-types';
-import invariant from 'invariant';
 import {SortableContext} from '../SortableContainer';
 
 import {provideDisplayName, omit} from '../utils';
@@ -78,16 +77,6 @@ export default function sortableElement(WrappedComponent) {
     unregister(collection = this.props.collection) {
       this.context.manager.remove(collection, this.ref);
     }
-
-    getWrappedInstance() {
-      invariant(
-        config.withRef,
-        'To access the wrapped instance, you need to pass in {withRef: true} as the second argument of the SortableElement() call',
-      );
-      return this.wrappedInstance.current;
-    }
-
-    wrappedInstance = React.createRef();
 
     render() {
       
