@@ -30,7 +30,7 @@ module.exports = (env, argv) => {
       alias:{
         'foornes-react-sortable-hoc': path.resolve(__dirname, 'build')
       },
-      extensions: ['js','jsx']
+      extensions: ['.js','.jsx']
     }
   }
 
