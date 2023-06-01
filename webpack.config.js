@@ -8,6 +8,8 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, 'build'),
       filename: 'index.js',
+      library: 'foornes-react-sortable-hoc',
+      libraryTarget: 'umd'
     },
     module: {
       rules: [
@@ -27,7 +29,8 @@ module.exports = (env, argv) => {
     resolve:{
       alias:{
         'foornes-react-sortable-hoc': path.resolve(__dirname, 'build')
-      }
+      },
+      extensions: ['js','jsx']
     }
   }
 
