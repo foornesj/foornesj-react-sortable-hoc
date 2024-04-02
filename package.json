@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "build": "bun build"
   },
   "repository": {
     "type": "git",
@@ -17,20 +17,12 @@
     "url": "https://github.com/foornesj/foornesj-react-sortable-hoc/issues"
   },
   "homepage": "https://github.com/foornesj/foornesj-react-sortable-hoc#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "array-move": "^4.0.0",
+    "invariant": "^2.2.4",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.22.1",
-    "@babel/preset-env": "^7.22.4",
-    "@babel/preset-react": "^7.22.3",
-    "babel-loader": "^9.1.2",
-    "invariant": "^2.2.4",
-    "webpack": "^5.85.0",
-    "webpack-cli": "^5.1.1",
-    "webpack-dev-server": "^4.15.0"
   }
 }
